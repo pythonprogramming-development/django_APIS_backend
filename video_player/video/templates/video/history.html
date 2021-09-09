@@ -1,13 +1,15 @@
-{% extends "video/base.html" %}
-{% block content %}
-    {% for object in objects %}
-        <article class="media content-section">
-            <div class="media-body">
-                <div class="article-metadata">
-                       <a href="">{{ object.history_url }}</a>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+</head>
+<body>
+<ul>
+{% for article in objects %}
+     <li><a href="{{ article }}">{{article.history_url}} </a></li>
+{% endfor %}
+</ul>
 
-            </div>
-        </article>
-    {% endfor %}
-{% endblock content %}
+</body>
+</html>

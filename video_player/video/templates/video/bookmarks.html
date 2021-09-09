@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmarks</title>
+</head>
+<body>
+<ul>
+{% for article in posts %}
+     <li><a href="{{ article }}">{{article.bookmark_url}} </a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
