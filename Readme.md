@@ -21,6 +21,9 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 ### About the app
 django basic demo
+python -m venv venv
+pip install -r requirements.txt
+Python manage.py runserver
 
 ## Subscribe and Stay Updated!
 
