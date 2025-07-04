@@ -1,5 +1,12 @@
 # video-player-project
 cd video_player 
+pip install -r requirements.txt
+
+.\venv\Scripts\activate
+pip install django
+python -m django --version
+pip install django-cors-headers django-crispy-forms
+pip freeze > requirements.txt
 
 python manage.py runserver 
 
